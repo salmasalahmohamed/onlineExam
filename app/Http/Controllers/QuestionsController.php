@@ -42,7 +42,6 @@ class QuestionsController extends Controller
 
     }
     public function question(){
-        \Illuminate\Support\Facades\Session::remove('nextq');
 
         \Illuminate\Support\Facades\Session::put('nextq','1');
         \Illuminate\Support\Facades\Session::put('wrongans','0');
